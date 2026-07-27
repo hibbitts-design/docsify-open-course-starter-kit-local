@@ -5,13 +5,14 @@
 <a href="https://discord.gg/zT8eS8ZG">
     <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Docsify Discord Chat" />
 </a>
-> This is a starter kit to quickly create a Markdown-based open course site with the site generator [Docsify](https://docsify.js.org). To address possible privacy/GDPR concerns all needed css/js files are loaded locally and not via CDN (thanks to [@mandrasch](https://github.com/mandrasch) for the suggestion).
+
+> This is a starter kit to quickly create a Markdown-based open course site with the site generator [Docsify](https://docsify.js.org) (v5 Preview). To address possible privacy/GDPR concerns all needed css/js files are loaded locally and not via CDN (thanks to [@mandrasch](https://github.com/mandrasch) for the suggestion).
 
 Docsify sites use client-side rendering, which means your content will not be indexed by search engines like Google, Bing, or DuckDuckGo.
 
 📸 Docsify Open Course Screenshots
 ---
-![ Docsify Open Course Starter Kit](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/smartmockups_kud98jh6.png)
+![ Docsify Open Course Starter Kit](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/smartmockups_lzlzwwuj.png)
 _Figure 1. Docsify Open Course Starter Kit. Explore a demo at [hibbitts-design.github.io/demo-docsify-open-course-starter-kit/](https://hibbitts-design.github.io/demo-docsify-open-course-starter-kit/#/)_
 
 🚀 GitHub Pages Quickstart
@@ -189,10 +190,6 @@ For example, here is a [Docsify Open Course Site hosted within a Canvas course](
 [Docsify Documentation](https://docsify.js.org/#/?id=docsifyg)  
 [Docsify Basics by MichaelCurrin](https://michaelcurrin.github.io/docsify-js-tutorial/#/?id=docsify-basics)  
 
-**Docsify Themable**  
-[Docsify Themeable Documentation](https://jhildenbiddle.github.io/docsify-themeable/#/introduction)  
-[Docsify Themeable GitHub](https://github.com/jhildenbiddle/docsify-themeable)  
-
 **Markdown**  
 [Markdown Here Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)  
 [Markdown Guide](https://www.markdownguide.org/)  
@@ -247,6 +244,36 @@ function test() {
 </details>
 
 </div>
+```
+
+`announcement`  
+When the Docsify v5 theme is enabled, to style Blockquotes similarly to the default Docsify-This style.  
+
+```html
+<blockquote class="announcement">
+  <h2>What’s Happening This Week</h2>
+  <h3>How to explore the problem space?</h3>
+  <h4>Important Reminders</h4>
+  <ul>
+    <li><a href="#">Journey Map</a> assignment <span class='badge'> Tue Jun 12th 11:59pm PDT</span></li>
+    <li><a href="#">Course Reflection Log</a> assignment <span class='badge'> Fri Aug 3rd 11:59pm PDT</span></li>
+  </ul>
+
+  <h4>Required Reading</h4>
+  <ul>
+    <li>
+      <a href="https://www.smashingmagazine.com/2014/10/the-skeptics-guide-to-low-fidelity-prototyping/">
+        The Skeptic’s Guide To Low-Fidelity Prototyping
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    <a href="https://canvas.sfu.ca/courses/44038/quizzes/166553" class="button primary">
+      Required Reading Quiz due Jun 4th
+    </a>
+  </p>
+</blockquote>
 ```
 
 `badge`  
@@ -361,7 +388,7 @@ function test() {
 `embedly-card` (for linked article previews, embedded slides/videos, etc.)  
 
 ```markdown
-<a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
+<a class="embedly-card" data-card-theme="light" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
 ```
 
 `header-image-fade` (suggested width of 1200px to 2000px)  
@@ -556,7 +583,7 @@ Markdown:
 [Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=mybutton')
 ```
 
-[Docsify Themeable CSS settings](https://jhildenbiddle.github.io/docsify-themeable/#/customization?id=base) can also be configured, as seen in the examples provided in the default `custom.css` file.
+Docsify theme settings can also be configured, as seen in the examples provided in the default `custom.css` file.
 
 CSS:  
 ```css
@@ -596,4 +623,4 @@ _Video 1. Generating Documentation Sites with GitHub and Docsify - Alysson Alvar
 
 🙇‍Credits and Special Thanks
 ---
-[Docsify Themeable](https://github.com/jhildenbiddle/docsify-themeable)   
+All past and current Docsify.js.org maintainers and contributors.
