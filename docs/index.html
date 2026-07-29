@@ -240,16 +240,6 @@
             img.src = window.resolveImagePath(img.dataset.src);
             });
 
-            var hasEmbedly = document.getElementsByClassName('embedly-card');
-            if (hasEmbedly.length > 0) {
-              // console.log("Load Embedly");
-              // elements with class "embedly-card" exist
-              var script = document.createElement('script');
-              script.type = 'text/javascript';
-              script.src = 'https://cdn.embedly.com/widgets/platform.js';
-              document.head.appendChild(script);
-            }
-
             // Remove optional ToC area if full width header image is present
             var hasImageHeader = document.getElementsByClassName('header-image-full-width');
             if (hasImageHeader.length > 0) {
@@ -351,6 +341,9 @@
       document.write('<script src="assets/vendor/docsify/plugins/custom/toc.js"><\/script>');
     }
   </script>
+
+  <!-- Embedly JS -->
+  <script src="https://cdn.embedly.com/widgets/platform.js"></script>
 
   <!-- Additional Languages for Prismjs -->
   <script src="assets/vendor/prismjs/prism-bash.min.js"></script>
